@@ -88,6 +88,7 @@ function startRecord(that) {
         minutes: '1',
         seconds: '00',
         isEnding: false,
+        isPlayingVoice: false,
       });
       clearInterval(timer);
       wx.stopRecord();

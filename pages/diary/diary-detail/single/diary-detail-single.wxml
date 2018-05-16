@@ -2,7 +2,7 @@
 
 <view class='container'>
   <block wx:if='{{diaryList.length!=0}}'>
-    <swiper style='height:{{scrollHeight}}px;' bindchange='onPageChange' skip-hidden-item-layout='{{true}}' current="{{currentTab}}">
+    <swiper style='height:{{scrollHeight}}px;' bindchange='onPageChange' skip-hidden-item-layout='{{true}}'>
       <block wx:for="{{diaryList}}" wx:key='{{index}}'>
         <swiper-item>
           <template is="diary-single" data='{{item,scrollHeight,timeline,pageNumber,isDate}}' />

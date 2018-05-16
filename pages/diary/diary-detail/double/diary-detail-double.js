@@ -24,7 +24,6 @@ Page({
     var diaryId = options.diaryId;
     var diaryName = options.diaryName;
     var diaryType = options.diaryType;
-    console.log(diaryId);
     var text = wx.getStorageSync('text');
     var height = util.getPageHeight();
     this.setData({

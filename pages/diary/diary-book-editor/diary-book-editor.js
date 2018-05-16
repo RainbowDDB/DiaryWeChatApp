@@ -12,7 +12,6 @@ Page({
       { name: 'single', value: '单人', checked: 'true' },
       { name: 'double', value: '双人' },
     ],
-    diary_border: '/images/icon/diary-border.jpg',
     tempFilePaths: ''
   },
 

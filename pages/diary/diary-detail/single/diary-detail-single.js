@@ -5,7 +5,6 @@ var globalData = app.globalData;
 
 Page({
   data: {
-    currentTab: 0,
     diaryId: '',
     diaryType: '',
     isDate: true,
@@ -91,7 +90,7 @@ Page({
   onPreview: function (event) {
     var imgSrc = event.currentTarget.dataset.imgsrc;
     var pageNumber = this.data.pageNumber;
-    var imgList = this.data.diaryList[pageNumber - 1].media.images;
+    var imgList = this.data.diaryList[pageNumber - 1].content.media.images;
     var images = [];
     for (var i = 0; i < imgList.length; i++) {
       images.push(imgList[i].img);
