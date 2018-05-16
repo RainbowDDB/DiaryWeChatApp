@@ -1,0 +1,32 @@
+<import src='../../component/template/diary-template/diary-item.wxml' />
+<view class='container'>
+
+  <view class='toolbar-container'>
+    <block>
+      <view class='user' wx:if="{{hasUserInfo}}">
+        <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+        <text class='user-name'>{{userInfo.nickName}}</text>
+        <text class='content'>的日记</text>
+        <image catchtap='onMessage' class='message' src='/images/icon/message.png'></image>
+      </view>
+      <view class='non-user' wx:else>
+        <button open-type='getUserInfo' plain='{{true}}' bindgetuserinfo='onGetUserInfo'>
+          <image src='/images/icon/mine-unselected.png'></image>
+          <text>未登录(点击登录)</text>
+        </button>
+      </view>
+    </block>
+  </view>
+  <view class='diary-container'>
+    <view class='inner-container'>
+      <block wx:for="{{diary_key}}" wx:key='{{index}}'>
+        <view class='inner-diary' catchlongpress='onDiaryEdit' catchtap='onDiaryView' data-diaryId='{{item.diary_id}}' data-diaryName='{{item.diary_name}}' data-diaryType='{{item.diary_type}}'>
+          <template is='diaryItem' data='{{...item}}' />
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='add-btn-container'>
+    <button catchtap='onAdd'>新建一本日记！</button>
+  </view>
+</view>

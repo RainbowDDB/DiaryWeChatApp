@@ -1,0 +1,33 @@
+<view class='container'>
+  <view class='clock'>
+    <view class='time'>
+      <block wx:if='{{!isEnding&&isRecording}}'>
+        <view class='play-toolbar'>
+          <image catchtap='onPlay' src="{{isPlayingVoice?'/images/icon/pause.png':'/images/icon/play.png'}}"></image>
+        </view>
+      </block>
+      <block wx:else>
+        <view>
+          <text class='minutes'>{{minutes}}</text>
+          <text>:</text>
+          <text class='seconds'>{{seconds}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='button-container'>
+    <block wx:if='{{isRecording&&!isEnding}}'>
+      <view class='recording'>
+        <button catchtap='onRecord' class='re-record-btn'>重录</button>
+        <button catchtap='onSubmit' class='submit-btn'>提交并返回</button>
+      </view>
+    </block>
+    <block wx:else>
+      <view class='unrecording'>
+        <button catchtap='onRecord' class="{{isRecording?'stop-btn':'start-btn'}}">{{isRecording?'停止':'开始录音'}}</button>
+      </view>
+    </block>
+    <text>Tips:每次录音时长不超过一分钟哦~</text>
+  </view>
+
+</view>

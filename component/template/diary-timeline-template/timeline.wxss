@@ -1,0 +1,53 @@
+.line{
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.line view{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.line text{
+  text-align: center;
+}
+
+
+.month {
+  width: 75px;
+  height: 100%;
+  background-image: radial-gradient(circle, white, white 45%, #666 55%, white, transparent 50%),
+                      linear-gradient(0, white 0%, white 49%, #999 49%, #999 51%, white 51%, white 100%);
+  background-position: 50% 50%, 50% 0;
+  background-size: 40px 40px, 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.month text {
+  position: relative;
+  font-size: 20px;
+  font-style: italic;
+  color: #00bfff;
+  top: 28px;
+}
+
+.day {
+  width: 50px;
+  height: 100%;
+  background-image: radial-gradient(#999 0%, #999 50%, transparent 50%),
+                      linear-gradient(0, white 0%, white 49%, #999 49%, #999 51%, white 51%, white 100%);
+  background-position: 50% 50%, 50% 0;
+  background-size: 18px 18px, 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.day text {
+  position: relative;
+  font-size: 16px;
+  color: #999;
+  top: 8px;
+}

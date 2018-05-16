@@ -1,0 +1,63 @@
+.tabs-container {
+  background-color: #fbfbff;
+  height: 100%;
+}
+
+image {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.user-info {
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #33a3dc;
+}
+
+.user-info image {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+}
+
+.user-info text {
+  margin-top: 20rpx;
+  color: white;
+}
+
+.non-login-img{
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 0;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+}
+
+.tab-item {
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+}
+
+.arrow-right {
+  height: 20rpx;
+  width: 15rpx;
+}
+
+.icon-text {
+  width: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,67 @@
+@import '../../../component/template/diary-template/diary-item.wxss';
+
+.diary > view{
+  height: 690rpx;
+  width: 600rpx;
+  margin: 10rpx auto 0 auto;
+}
+
+.diary-cover{
+  height: 670rpx;
+  width: 556rpx;
+  padding: 25rpx;
+}
+
+.diary-name {
+  font-size: 50rpx;
+  width: auto;
+}
+
+.content{
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+  color: #8e8e8e;
+}
+
+.radio-group{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-settings{
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.input-settings text{
+  font-size: 34rpx;
+}
+
+.input-name{
+  margin: 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-name input{
+   width: 50%;
+}
+.input-cover{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30rpx 30rpx 0;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 15rpx;
+  align-items: center;
+}
+
+.input-cover image{
+  height: 20rpx;
+  width: 15rpx;
+}
+
+.submit-btn{
+  margin: 20rpx 30rpx;
+}

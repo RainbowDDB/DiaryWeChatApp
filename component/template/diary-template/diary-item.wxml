@@ -1,0 +1,8 @@
+<template name='diaryItem'>
+  <view class='diary'>
+    <view>
+      <image class='diary-cover' mode='scaleToFill' src="{{cover}}"></image>
+    </view>
+    <text class='diary-name'>{{diary_name}}</text>
+  </view>
+</template>

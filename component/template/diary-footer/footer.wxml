@@ -1,0 +1,9 @@
+<template name='footer'>
+  <view class='footer'>
+    <view>
+      <image catchtap='onEdit' data-diaryId='{{diaryId}}' src='/images/icon/edit.png'></image>
+      <image catchtap='onDelete' class='delete-img' src='/images/icon/delete.png'></image>
+    </view>
+    <text class='pageNumber'>{{pageNumber}}</text>
+  </view>
+</template>

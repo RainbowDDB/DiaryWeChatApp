@@ -1,0 +1,7 @@
+<!--pages/settings/settings.wxml-->
+<view class='container'>
+  <view class='share-settings'>
+    <text>是否匿名分享</text>
+    <switch checked='{{isShare}}' bindchange='onShareModeChange' color='#00bfff'></switch>
+  </view>
+</view>

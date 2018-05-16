@@ -1,0 +1,20 @@
+<template name='timeline-month-day'>
+  <view class='line'>
+    <!--不相等-->
+    <view class='month'>
+      <text>{{month}}</text>
+    </view>
+    <view class='day' catchtap='onDay' data-diaryId='{{diaryId}}'>
+      <text>{{day}}</text>
+    </view>
+  </view>
+</template>
+
+<template name='timeline-day'>
+  <view class='line'>
+    <!-- 相等 -->
+    <view class='day' catchtap='onDay' data-diaryId='{{diaryId}}'>
+      <text>{{day}}</text>
+    </view>
+  </view>
+</template>

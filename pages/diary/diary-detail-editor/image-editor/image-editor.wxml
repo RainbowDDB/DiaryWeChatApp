@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='text-content'>
+    <text>上传图片</text>
+    <text class='image-number'>{{imageNumber}}/9</text>
+  </view>
+  <view class='image-container'>
+    <block wx:for='{{images}}'>
+      <image catchtap='onPreview' data-imageUrl='{{item.src}}' src='{{item.src}}' mode='aspectFill'></image>
+    </block>
+    <image wx:if='{{imageNumber<9}}' catchtap='onAddImage' class='add-img' src='/images/icon/add.png'></image>
+  </view>
+  <view class='back-btn'>
+    <button catchtap='onBack'>返回继续编辑</button>
+  </view>
+
+</view>

@@ -1,0 +1,79 @@
+@import '../diary-detail-template/diary-detail.wxss';
+@import '../diary-timeline-template/timeline.wxss';
+@import '../diary-footer/footer.wxss';
+
+image {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+video {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.date-container{
+  width: 95%;
+  margin: 20rpx auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.date{
+  font-size: 40rpx;
+}
+
+.user-info {
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.single-diary {
+  background-color: #ecf5ff;
+  width: 95%;
+  margin: 20rpx auto;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.avatar {
+  height: 96rpx;
+  width: 96rpx;
+  margin: 0 20rpx 0 10rpx;
+  border-radius: 50%;
+}
+
+.nick-name {
+  font-size: 40rpx;
+}
+
+.diary-detail {
+  border-top: 1px solid #aaa;
+}
+
+.time-line {
+  width: 100%;
+  white-space: nowrap;
+  height: 80px;
+  border-bottom: 1px solid #ededed;
+  background-color: #fff;
+}
+
+.time-line image {
+  height: 40px;
+  width: 40px;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.diary-bar {
+  margin: 0 25rpx;
+}
+
+.image-container image {
+  height: 210rpx;
+  width: 210rpx;
+}

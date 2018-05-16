@@ -1,0 +1,30 @@
+
+/*此处坑很大，暂时跳过，关于背景图片image标签*/
+
+.diary {
+  margin: 10rpx auto 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.diary > view {
+  width: 230rpx;
+  height: 300rpx;
+  background-size: cover;
+}
+
+/* 令人窒息的操作，rpx换算调整法...*/
+.diary-cover {
+  padding: 10rpx;
+  vertical-align: middle;
+  width: 210rpx;
+  height: 280rpx;
+}
+
+.diary-name {
+  margin-top: 10rpx;
+  align-self: center;
+  word-break: break-all;
+  text-align: center;
+  width: 230rpx;
+}

@@ -1,0 +1,91 @@
+.clock {
+  height: 100%;
+  width: 100%;
+  background-color: #33a3dc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock text {
+  color: white;
+  font-size: 80rpx;
+}
+
+.minute {
+  margin-right: 10rpx;
+}
+
+.seconds {
+  margin-left: 10rpx;
+}
+
+.time {
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-toolbar image {
+  height: 250rpx;
+  width: 250rpx;
+}
+
+.button-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 360rpx;
+}
+
+.button-container>view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-container text {
+  font-size: 32rpx;
+}
+
+.button-container .recording {
+  height: 50%;
+  width: 100%;
+}
+
+.stop-btn{
+  
+}
+
+.re-record-btn{
+  background-color: #fff;
+  color: #00bfff;
+}
+
+.submit-btn {
+  margin-top: 40rpx;
+}
+
+.button-container .unrecording {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+}

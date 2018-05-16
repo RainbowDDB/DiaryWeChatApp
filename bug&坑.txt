@@ -1,0 +1,64 @@
+功能：
+    编辑页面字间距
+    插入音频和视频
+    日记撕毁标记
+    天气自同步
+    提交日记showModal
+    diary-detail-template 文字样式
+#f6f5ec
+大坑：
+    自定义底部弹出窗
+    本地数据和网络数据
+    心情表情
+    日记可调字体大小和颜色
+    图标样式，黑白？彩色？
+    编辑页面未加入音乐视频等 呈灰色
+<view class='footprint'>
+    <view class='footprint-text'>
+      <text>足</text>
+      <text>迹</text>
+    </view>
+    <view class='diary-container'>
+      <block wx:for="{{diary_key}}">
+        <view class='inner-container' catchlongpress='onDiaryEdit' catchtap='onDiaryView' data-diaryId='{{item.diary_id}}' data-diaryName='{{item.diary_name}}'>
+          <template is='diaryItem' data='{{...item}}' />
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+.footprint{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #ededed;
+  justify-content: center;
+  align-items: center;
+}
+
+.footprint-text{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footprint-text text{
+  font-size: 50rpx;
+}
+
+.diary-container {
+  /*margin: 5px 5px 0 5px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center;*/
+}
+
+.inner-container{
+  padding: 0 10rpx;
+}
+
+

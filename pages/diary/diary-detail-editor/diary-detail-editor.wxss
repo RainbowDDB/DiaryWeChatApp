@@ -1,0 +1,88 @@
+.container {
+  width: auto;
+  height: 100%;
+  margin: 0 30rpx;
+}
+
+.diary-bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #ededed;
+}
+
+.diary-date {
+  font-size: 30rpx;
+}
+
+.weather-mood {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+}
+
+.weather-img {
+  margin-right: 15rpx;
+}
+
+.weather-name {
+  font-size: 36rpx;
+}
+
+.mood{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.mood-img {
+  margin-right: 10rpx;
+}
+
+.diary-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.diary-info image {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.diary-settings image {
+  height: 48rpx;
+  width: 48rpx;
+  margin-left: 20rpx;
+}
+
+.editor-area {
+  margin-top: 10rpx;
+  height: 100%;
+  width: 100%;
+}
+
+textarea {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  width: auto;
+  height: 800rpx;
+  background-color: #f8f8f8;
+}
+
+.finish-btn {
+  width: 690rpx;
+  align-self: center;
+  position: fixed;
+  bottom: 20rpx;
+}

@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class='diary-bar'>
+    <view class='diary-info'>
+      <text class='diary-date'>{{time}}</text>
+      <view class='weather-mood'>
+        <view catchtap='onWeatherChange' class='weather'>
+          <image class='weather-img' src='{{weather.src}}'></image>
+          <text class='weather-name'>{{weather.name}}</text>
+        </view>
+        <view catchtap='onMood' class='mood'>
+          <image class='mood-img' src="{{isMoodSetting?'/images/icon/mood.png':'/images/icon/mood-default.png'}}"></image>
+          <text wx:if='{{isMoodSetting}}'>{{mood}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='diary-settings'>
+      <image src='/images/icon/image.png' catchtap='onChooseImage'></image>
+      <image src='/images/icon/sound.png' catchtap='onRecord'></image>
+      <image src='/images/icon/video.png' catchtap='onChooseVideo'></image>
+    </view>
+  </view>
+  <view class='editor-area'>
+    <form bindsubmit="formSubmit">
+      <textarea wx:if='{{!showModal}}' class='text-edit' maxlength='-1' placeholder='美好回忆从现在开始...' name="textarea" bindinput='onTextChange' value='{{text}}'/>
+      <button form-type='submit' class='finish-btn'>完成！</button>
+    </form>
+  </view>
+</view>
+
+<modal show-modal="{{showModal}}" bindmoodchange="onMoodChange" bindisshowmodal='onIsShowModal' />

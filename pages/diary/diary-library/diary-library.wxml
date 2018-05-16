@@ -1,0 +1,17 @@
+<import src='../../../component/template/diary-template/diary-item.wxml' />
+
+<view class='container'>
+
+  <text class='title'>日记馆</text>
+  <view class='toolbar'>
+
+    <view class='search'>
+      <icon class='search-icon' size='20' type='search'></icon>
+      <input placeholder='请输入关键字' confirm-type='search' maxlength='12' bindconfirm='onSearch'></input>
+    </view>
+    <text catchtap='onPick'>不知道搜什么？拣一个吧!</text>
+  </view>
+  <view class='image-view'>
+    <image mode='widthFix' src='/images/4.jpg'></image>
+  </view>
+</view>

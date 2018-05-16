@@ -1,0 +1,75 @@
+.diary-bar {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15rpx;
+  border-bottom: 1px solid #ededed;
+}
+
+.diary-bar text {
+  font-size: 40rpx;
+}
+
+.weather-mood {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mood {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mood text {
+  margin-left: 15rpx;
+  max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.record-container {
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container text {
+  /* 文字样式需要改动 */
+  width: 95%;
+  font-size: 36rpx;
+  /*text-indent: 92rpx;*/
+  line-height: 50rpx;
+  letter-spacing: 10rpx;
+  word-spacing: 10rpx;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container image {
+  height: 220rpx;
+  width: 220rpx;
+  margin: 10rpx 11rpx;
+}

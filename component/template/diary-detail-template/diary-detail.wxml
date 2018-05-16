@@ -1,0 +1,35 @@
+<template name='diary-detail'>
+  <view class='diary-bar'>
+    <text wx:if='{{isDate}}' class='diary-date'>{{time}}</text>
+
+    <!-- 多switch渲染？-->
+    <view class='mood'>
+      <image src="{{content.mood?'/images/icon/mood.png':'/images/icon/mood-default.png'}}"></image>
+      <text>{{content.mood}}</text>
+    </view>
+    <image class='weather' src='/images/icon/weather/weather-windy.png'></image>
+
+  </view>
+
+  <view class='record-container' wx:if='{{content.media.audio}}'>
+    <!-- 可改动，实在太丑了...-->
+    <audio src='{{content.media.audio.src}}' name='{{content.media.audio.name}}' author='{{content.media.audio.author}}' controls></audio>
+  </view>
+
+  <view class='content-container'>
+    <text space='emsp'>{{content.text}}</text>
+  </view>
+
+  <block wx:if="{{content.media.video}}||{{content.media.images.length}}">
+    <view class='media-container'>
+      <view wx:if='{{content.media.images.length}}' class='image-container'>
+        <block wx:for="{{content.media.images}}" wx:for-item="itemSrc" wx:key='{{index}}'>
+          <image catchtap='onPreview' src='{{itemSrc.img}}' data-imgSrc='{{itemSrc.img}}' mode='aspectFill'></image>
+        </block>
+      </view>
+      <block wx:if='{{content.media.video}}'>
+        <video src='{{content.media.video}}'></video>
+      </block>
+    </view>
+  </block>
+</template>

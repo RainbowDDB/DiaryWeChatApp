@@ -1,0 +1,106 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wx99f61da538ff52be",
+	"projectname": "Diary",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "help",
+					"pathName": "pages/help/help",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "diary-book-editor",
+					"pathName": "pages/diary/diary-book-editor/diary-book-editor",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "settings",
+					"pathName": "pages/settings/settings",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "diary-detail-editor",
+					"pathName": "pages/diary/diary-detail-editor/diary-detail-editor",
+					"query": "diaryId=15"
+				},
+				{
+					"id": -1,
+					"name": "image-editor",
+					"pathName": "pages/diary/diary-detail-editor/image-editor/image-editor",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "single",
+					"pathName": "pages/diary/diary-detail/single/diary-detail-single",
+					"query": "diaryId=40&diaryName=hhhhhh"
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "double",
+					"pathName": "pages/diary/diary-detail/double/diary-detail-double",
+					"query": "diaryId=1&diaryName=hhhhhh"
+				},
+				{
+					"id": -1,
+					"name": "library",
+					"pathName": "pages/diary/diary-library/diary-library",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "double",
+					"pathName": "pages/diary/diary-detail/double/diary-detail-double",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "record",
+					"pathName": "pages/diary/diary-detail-editor/record-editor/record-editor",
+					"query": "diaryId=1&diaryName=hhhhhh"
+				}
+			]
+		}
+	}
+}

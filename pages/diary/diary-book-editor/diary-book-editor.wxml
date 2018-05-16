@@ -1,0 +1,26 @@
+<import src='../../../component/template/diary-template/diary-item.wxml' />
+
+<view class='container' style='height:{{height}}'>
+  
+  <view class='diary-style'>
+    <template is='diaryItem' data='{{...item}}' />
+  </view>
+  <form bindsubmit='onSubmit'>
+    <radio-group name='diary_type' class="radio-group">
+      <label class="radio" wx:for="{{radioItems}}" wx:key='{{index}}'>
+        <radio value="{{item.name}}" checked="{{item.checked}}" color="#00bfff"/>{{item.value}}
+      </label>
+    </radio-group>
+    <view class='input-settings'>
+      <view class='input-name'>
+        <text>输入日记名称：</text>
+        <input name='diary_name' placeholder='最多6个字' maxlength='6' bindinput='onNameChange'></input>
+      </view>
+      <view catchtap='onCoverChange' class='input-cover'>
+        <text>修改日记封面</text>
+        <image src='/images/icon/arrow-right.png'></image>
+      </view>
+      <button class='submit-btn' form-type='submit'>添入书架</button>
+    </view>
+  </form>
+</view>

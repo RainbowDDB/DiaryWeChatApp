@@ -1,0 +1,21 @@
+<import src='../../../../component/template/diary-double/diary-double.wxml' />
+
+<view class='container'>
+  <block wx:if='{{diaryList.length!=0}}'>
+    <swiper style='height:{{scrollHeight}}px;' bindchange='onPageChange' skip-hidden-item-layout='{{true}}' current="{{currentTab}}">
+      <block wx:for="{{diaryList}}" wx:key='{{index}}'>
+        <swiper-item>
+          <template is="diary-double" data='{{item,scrollHeight,timeline,pageNumber,isDate,diaryId}}' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </block>
+  <block wx:else>
+    <view class='blank'>
+      <view>
+        <text>你好像还没有开始写日记哦，快来写一篇吧</text>
+        <button catchtap='onEdit'>写一篇！</button>
+      </view>
+    </view>
+  </block>
+</view>

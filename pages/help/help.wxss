@@ -1,0 +1,29 @@
+/* pages/help/help.wxss */
+
+.help-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.help-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.help-container text {
+  margin-left: 15rpx;
+  letter-spacing: 5rpx;
+  font-family: MicroSoft Yahei;
+}
+
+.question {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.answer {
+  margin-top: 5px;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}

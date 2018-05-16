@@ -1,0 +1,40 @@
+
+.text-content {
+  margin: 20rpx 20rpx 0;
+}
+
+.text-content text {
+  color: #8e8e8e;
+}
+
+.image-number {
+  margin-left: 10rpx;
+}
+
+.image-container {
+  margin-top: 20rpx;
+  padding: 0 5rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+image {
+  height: 220rpx;
+  width: 220rpx;
+  margin: 10rpx 11rpx;
+}
+
+.back-btn {
+  width: 90%;
+  align-self: center;
+  position: fixed;
+  bottom: 30rpx;
+  box-sizing: border-box;
+}
+
+.back-btn button {
+  width: 90%;
+}

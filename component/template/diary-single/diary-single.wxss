@@ -1,0 +1,32 @@
+@import '../diary-detail-template/diary-detail.wxss';
+@import '../diary-timeline-template/timeline.wxss';
+@import '../diary-footer/footer.wxss';
+
+image {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+video {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.time-line {
+  width: 100%;
+  white-space: nowrap;
+  height: 80px;
+  border-bottom: 1px solid #ededed;
+  background-color: #fff;
+}
+
+.time-line image {
+  height: 40px;
+  width: 40px;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.mood {
+  margin-left: 90rpx;
+}

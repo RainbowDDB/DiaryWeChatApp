@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/settings/settings",
+    "pages/help/help",
+    "pages/message/message",
+    "pages/diary/diary-library/diary-library",
+    "pages/diary/diary-detail/single/diary-detail-single",
+    "pages/diary/diary-detail/double/diary-detail-double",
+    "pages/diary/diary-book-editor/diary-book-editor",
+    "pages/diary/diary-detail-editor/diary-detail-editor",
+    "pages/diary/diary-detail-editor/image-editor/image-editor",
+    "pages/diary/diary-detail-editor/record-editor/record-editor"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33a3dc",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#00bfff",
+    "borderStyle": "black",
+    "backgroundColor": "#fbfbff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "日记",
+        "iconPath": "/images/icon/diary-unselected.png",
+        "selectedIconPath": "/images/icon/diary-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "/images/icon/mine-unselected.png",
+        "selectedIconPath": "/images/icon/mine-selected.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  width: 90%;
+  align-self: center;
+  position: fixed;
+  bottom: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer>view {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.delete-img {
+  margin-left: 30rpx;
+}

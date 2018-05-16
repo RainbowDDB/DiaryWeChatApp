@@ -1,0 +1,30 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+  <view class='user-info'>
+    <block wx:if='{{hasUserInfo}}'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <text>{{userInfo.nickName}}</text>
+    </block>
+    <block wx:else>
+      <image class='non-login-img' src='/images/icon/mine-unselected.png'></image>
+      <text>点击登录</text>
+    </block>
+  </view>
+
+  <view class='tabs-container'>
+    <block wx:for='{{tab}}'>
+      <view class='tabs'>
+        <block wx:for='{{tab[index]}}'>
+          <view class='tab-item' catchtap='onClick' data-id='{{item.id}}'>
+            <view class='icon-text'>
+              <image src='{{item.iconSrc}}'></image>
+              <text>{{item.name}}</text>
+            </view>
+            <image class='arrow-right' src='/images/icon/arrow-right.png'></image>
+          </view>
+        </block>
+      </view>
+    </block>
+
+  </view>
+</view>

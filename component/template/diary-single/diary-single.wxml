@@ -1,0 +1,18 @@
+<import src='../diary-detail-template/diary-detail.wxml' />
+<import src='../diary-timeline-template/timeline.wxml' />
+<import src='../diary-footer/footer.wxml' />
+
+<template name='diary-single'>
+  <scroll-view class='content' scroll-y style='height:{{scrollHeight-40}}px;' >
+    <scroll-view scroll-x class='time-line'>
+      <image src='/images/icon/time-line.png'></image>
+      <block wx:key="{{index}}" wx:for="{{timeline}}">
+        <template is="{{(index==0 || item.month != timeline[index-1].month)?'timeline-month-day':'timeline-day'}}" data='{{...item}}' />
+      </block>
+    </scroll-view>
+    <view>
+      <template is='diary-detail' data='{{...item,isDate}}' />
+    </view>
+  </scroll-view>
+  <template is='footer' data='{{pageNumber,diaryId}}' />
+</template>

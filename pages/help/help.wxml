@@ -1,0 +1,7 @@
+<!--pages/help/help.wxml-->
+<view class='help-container' >
+  <view class='help-list' wx:for='{{QandA}}'>
+    <text class='question'>{{item.question}}</text>
+    <text class='answer'>{{item.answer}}</text>
+  </view>
+</view>

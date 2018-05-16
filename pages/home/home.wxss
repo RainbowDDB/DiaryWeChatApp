@@ -1,0 +1,86 @@
+@import '../../component/template/diary-template/diary-item.wxss';
+
+.container {
+  background-size: cover;
+  align-items: center;
+}
+
+.toolbar-container {
+  margin-top: 10px;
+  width: 98%;
+  height: 80rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #ededed;
+}
+
+.user {
+  margin-left: 2px;
+  float: left;
+}
+
+.user-avatar {
+  height: 80rpx;
+  width: 80rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.user-name {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.non-user button{
+  display: flex;
+  border: 0;
+}
+.non-user image{
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 2px;
+}
+
+.non-user text{
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.content {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.message {
+  height: 48rpx;
+  width: 48rpx;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.settings {
+  margin-right: 10px;
+}
+
+.diary-container {
+  /*margin: 5px 5px 0 5px;*/
+  height: 100%;
+  
+  /* justify-content: center;*/
+  margin-top: 10rpx;
+}
+
+.inner-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.inner-diary{
+  padding: 0 10rpx;
+}
+
+.add-btn-container{
+  margin: 60rpx 0;
+}

@@ -1,0 +1,24 @@
+@import '../../../../component/template/diary-single/diary-single.wxss';
+
+page {
+  height: auto;
+}
+
+swiper {
+  width: 100%;
+}
+
+swiper-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blank{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

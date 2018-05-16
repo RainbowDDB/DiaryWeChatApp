@@ -1,0 +1,18 @@
+
+.container {
+  padding-top: 30rpx;
+}
+
+.share-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+text {
+  margin-left: 30rpx;
+}
+
+.share-settings switch {
+  margin-right: 30rpx;
+}

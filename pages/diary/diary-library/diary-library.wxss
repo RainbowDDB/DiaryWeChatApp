@@ -1,0 +1,59 @@
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: absolute;
+  top: 250rpx;
+  font-size: 60rpx;
+  letter-spacing: 20rpx;
+  color: #2e2e2e;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /*height: 50%;*/
+}
+
+.toolbar text {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color:#3A5FCD;
+  text-decoration: underline;
+  
+  align-self: flex-end;
+}
+
+.search {
+  height: 80rpx;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #00bfff;
+  border-radius: 50rpx;
+}
+
+.image-view {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.image-view image {
+  width: 100%;
+  height: 100%;
+}
+
+.search icon {
+  margin: 0 15rpx;
+}
+
+.search input {
+  width: 100%;
+}
