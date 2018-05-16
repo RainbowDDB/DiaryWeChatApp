@@ -6,6 +6,7 @@
     "pages/help/help",
     "pages/message/message",
     "pages/diary/diary-library/diary-library",
+    "pages/diary/diary-library/diary-search/diary-search",
     "pages/diary/diary-detail/single/diary-detail-single",
     "pages/diary/diary-detail/double/diary-detail-double",
     "pages/diary/diary-book-editor/diary-book-editor",

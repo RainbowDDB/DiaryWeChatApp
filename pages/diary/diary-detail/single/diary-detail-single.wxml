@@ -12,9 +12,11 @@
   </block>
   <block wx:else>
     <view class='blank'>
-      <view>
-        <text>你好像还没有开始写日记哦，快来写一篇吧</text>
-        <button catchtap='onEdit'>写一篇！</button>
+      <view class='edit-btn' catchtap='onEdit'>
+        <text>写一篇</text>
+      </view>
+      <view class='tips'>
+        <text>你好像还没有开始写日记哦\n快来写一篇吧</text>
       </view>
     </view>
   </block>

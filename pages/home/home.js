@@ -9,6 +9,7 @@ Page({
     diary_key: [],
     userInfo: {},
     hasUserInfo: false,
+    lock: false,
   },
 
   onLoad: function (options) {
@@ -43,6 +44,10 @@ Page({
   },
 
   onDiaryView: function (event) {
+    // 检查锁
+    if (this.data.lock) {
+      return;
+    }
     var diaryId = event.currentTarget.dataset.diaryid;
     var diaryName = event.currentTarget.dataset.diaryname;
     var diaryType = event.currentTarget.dataset.diarytype;
@@ -63,6 +68,10 @@ Page({
   },
 
   onDiaryEdit: function (event) {
+    // 锁住
+    this.setData({
+      lock: true
+    });
     var diaryId = event.currentTarget.dataset.diaryid;
     var diaryType = event.currentTarget.dataset.diarytype;
     var that = this;
@@ -177,5 +186,16 @@ Page({
     wx.navigateTo({
       url: '../diary/diary-book-editor/diary-book-editor'
     });
+  },
+
+  touchEnd: function () {
+    if (this.data.lock) {
+      //开锁
+      setTimeout(() => {
+        this.setData({
+          lock: false,
+        });
+      }, 100);
+    }
   }
 })
